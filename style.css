@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fffafa;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    box-shadow: 2px 3px 4px #f1f1f1;
+}
+
+.nav h2 {
+    color: blue;
+}
+
+.nav h2:hover {
+    cursor: pointer;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 4rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color:darkslategray;
+    font-size: 1.2rem;
+}
+
+
+ul li a:hover {
+    color: black;
+    box-shadow: 2px 3px 2px darkgray;
+    border-radius: 5px;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+
+
+
+/* hero section */
+span {
+    color: blue;
+}
+
+
+
+.hero {
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 2rem;  
+}
+
+.left {
+    /* border: 3px solid red; */
+    width: 33%;
+    padding-left: 20px;
+}
+
+.heading {
+    padding: 10px;
+}
+.heading h1 {
+    padding: 1.5px;
+    word-spacing: 0.1em;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.para {
+    padding: 10px;
+}
+
+.para p {
+    padding: 2px;
+    word-spacing: 1.4px;
+    color:darkslategray;
+}
+
+.but {
+    padding: 10px;
+}
+
+.btn1 {
+    color:white;
+    background-color: blue;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-color: white;
+    box-shadow: 2px 2px 2px #fff;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+
+.btn1:hover {
+    color: darkslategrey;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn2 {
+    color: blue;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-color: white;
+    box-shadow: 2px 2px 2px #fff;
+    margin: 5px;
+    font-size: 1rem;
+}
+
+.btn2:hover {
+    color: black;
+    background-color: darkslategray;
+    cursor: pointer;
+}
+
+.right {
+    /* border: 3px solid green; */
+    width: 50%;
+}
+
+
+
+@media screen and (width <= 1024px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        /* width: 100vw; */
+    }
+
+    .left {
+        width: 70%;
+    }
+
+    .right {
+        width: 70%;
+    }
+}
+
+
+@media screen and (width < 650px) {
+     .hero {
+        width: 100vw;
+     }
+
+     ul {
+        display: none;
+     }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        console.log(' lets start guys');
+
+        // object creation 
+        // let rectangle ={
+        //     length :1,
+        //     breadth:2,
+
+        //     draw: function(){
+        //         console.log(" drawing rectangle")
+        //     }
+        // };
+
+        // using factory function 
+
+        // function createRectangle(len ,bre){
+        //     return rectangle ={
+        //         length :len,
+        //         breadth:bre,
+
+        //         draw (){
+        //             console.log('drawing rectangle');
+        //         }
+        //     };
+        // }
+
+        // let rectangleobj1 =createRectangle(5,4);
+        // let rectangleobj2 =createRectangle(6,5);
+        //let rectangleobj3 =createRectangle(7,8);
+
+
+          // using constructor function
+
+        function Rectangle( len,bre){
+            this.length=len;
+            this.bteadth= bre;
+            this.draw =function(){
+                console.log('drawing in process');
+            }
+        }
+
+        
+        // object creation using constructor function
+        // let rectangleobject =new Rectangle(4,6);
+
+        // rectangleobject.color='yelow';
+        // console.log(rectangleobject);
+
+        // delete rectangleobject.color;
+        // console.log(rectangleobject);
+
+
+        // let  Rectangle = new Function(
+        //     'length','breadth',
+        //     ` this. length=length`;
+        // )
+
+
+    </script>  
+    
+</body>
+</html>

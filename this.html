@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="this.style.display='none' ">clixk me to hide me </button> -->
+    <!-- <button onclick="this.style.background='red' ">clixk me to hide me </button> -->
+    <br/>
+     <button onclick="remove(this)">click me</button>
+    
+</body>
+<script>
+    //var x= this;
+    //document.write("<h1>"+x);
+//     var person ={
+//         firstName: "krishna",
+//         secondName: "singh",
+//         fullname : function(){
+//             return this.firstName + this.secondName;
+
+//         }
+//    };
+   //document.write("<h1>" +person.fullname());
+   function remove(elem){
+   // elem.style.display='none';
+   alert(this);
+   }
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>15 Puzzle Game</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+  <h1>15 Puzzle Game</h1>
+
+  <div id="game-container">
+    <div id="game-header">
+      <div id="timer">00:00:00</div>
+      <div id="move-count">Moves: 0</div>
+    </div>
+    <div id="game-board"></div>
+    <div id="game-controls">
+      <button id="new-game-btn">New Game</button>
+      <div id="size-selection">
+        <label for="size-select">Size:</label>
+        <select id="size-select">
+          <option value="3">3x3</option>
+          <option value="4" selected>4x4</option>
+          <option value="5">5x5</option>
+        </select>
+      </div>
+      <div id="image-selection">
+        <label for="image-select">Image:</label>
+        <select id="image-select">
+          <option value="">Numbers</option>
+          <option value="image1.jpg">Image 1</option>
+          <option value="image2.jpg">Image 2</option>
+          <option value="image3.jpg">Image 3</option>
+        </select>
+      </div>
+    </div>
+    <div id="leaderboard-container">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboard-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

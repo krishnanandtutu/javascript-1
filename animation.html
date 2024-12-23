@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .yellow{
+        width:400px;
+        height:400px;
+        background:yellow;
+        position:relative;
+    }
+    #red{
+        width:50px;
+        height:50px;
+        background:red;
+        position:absolute;
+    }
+
+</style>
+</head>
+<body >
+    <button onclick="move()">click me</button>
+    <div class="yellow">
+        <div id="red"></div>
+    </div>
+    
+</body>
+<script>
+    function move(){
+        var redelem =document.getElementById('red');
+        var poe=0;
+        var anim=setInterval(animate,5);
+
+        function animate(){
+            if (poe ==350){
+                clearInterval(anim);
+            }
+            else{
+                poe++;
+                redelem.style.top=poe+"px";
+                redelem.style.left=poe+"px";
+            }
+        }
+
+    }
+</script>
+</html>

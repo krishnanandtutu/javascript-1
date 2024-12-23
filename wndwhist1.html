@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h1>First</h1>
+    <button onclick="window.history.forward()";> Forward</button>
+    <button onclick="window.history.back()";> Back</button>
+    <button onclick="window.history.go(-2)";> Go</button>
+    <!-- 
+        0- first
+        1-second
+        2-third
+        3-fourth
+    -->
+</body>
+<script>
+    var c = window.history.length;
+    document.getElementsByTagName('h1')[0].innerText=c;
+</script>
+</html>

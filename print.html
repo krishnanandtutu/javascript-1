@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+   #dv{
+     margin:auto;
+     justify-content: center;
+
+   } -->
+    
+
+    <!-- </style> -->
+</head>
+<body id="body">
+     <center>
+    <div >
+    <image src="ws.jpeg" width="300px"/>
+    </div>
+    <h1>printable data</h1>
+    <p id="data">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum iure tempora in ad minima mollitia minus dolor dignissimos commodi nam animi, totam officiis eaque nisi dolorum facere architecto. Explicabo, odio!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est qui ducimus, provident ipsum itaque nobis numquam nulla reprehenderit commodi consectetur fuga aperiam repellat autem rem temporibus adipisci a blanditiis explicabo!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut quidem ratione nam nisi consectetur, deleniti, sed, numquam enim alias perferendis ducimus laudantium tempore accusantium eum dolorem ipsa nulla fugit!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sit vel dolorem, veniam optio necessitatibus sequi suscipit, nemo fuga possimus consequuntur iusto amet nostrum praesentium nam voluptas tempore voluptates facere?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit a aliquid nesciunt libero, soluta et, est explicabo distinctio mollitia ipsa dolores. Animi laborum sapiente doloremque ad reprehenderit hic dolorem minus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quisquam ea ut! Sit odio numquam dolorum a. Placeat, sunt esse, aliquam minima aut nihil necessitatibus vel numquam cum voluptatibus officia.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque obcaecati tenetur modi ipsa, pariatur, ea, repudiandae et blanditiis iure sunt laudantium veniam temporibus dolore aperiam libero perspiciatis ex magni?
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias cum, cupiditate minima, et accusamus numquam officiis animi ipsam possimus, minus obcaecati quasi. Odio architecto fugiat assumenda voluptate soluta odit unde!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum molestias maxime totam, nobis commodi, quis neque quae deserunt modi repudiandae vero quisquam numquam unde veniam deleniti asperiores itaque recusandae?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis similique quo eos eius vitae voluptatum adipisci dolorum, assumenda quidem, harum atque mollitia explicabo. Temporibus, voluptatem unde corrupti quae dolorum esse?
+    </p>
+    <button onclick="printpage()">print content</button>
+    <p >
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum iure tempora in ad minima mollitia minus dolor dignissimos commodi nam animi, totam officiis eaque nisi dolorum facere architecto. Explicabo, odio!
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est qui ducimus, provident ipsum itaque nobis numquam nulla reprehenderit commodi consectetur fuga aperiam repellat autem rem temporibus adipisci a blanditiis explicabo!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aut quidem ratione nam nisi consectetur, deleniti, sed, numquam enim alias perferendis ducimus laudantium tempore accusantium eum dolorem ipsa nulla fugit!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sit vel dolorem, veniam optio necessitatibus sequi suscipit, nemo fuga possimus consequuntur iusto amet nostrum praesentium nam voluptas tempore voluptates facere?
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit a aliquid nesciunt libero, soluta et, est explicabo distinctio mollitia ipsa dolores. Animi laborum sapiente doloremque ad reprehenderit hic dolorem minus.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quisquam ea ut! Sit odio numquam dolorum a. Placeat, sunt esse, aliquam minima aut nihil necessitatibus vel numquam cum voluptatibus officia.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus itaque obcaecati tenetur modi ipsa, pariatur, ea, repudiandae et blanditiis iure sunt laudantium veniam temporibus dolore aperiam libero perspiciatis ex magni?
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias cum, cupiditate minima, et accusamus numquam officiis animi ipsam possimus, minus obcaecati quasi. Odio architecto fugiat assumenda voluptate soluta odit unde!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatum molestias maxime totam, nobis commodi, quis neque quae deserunt modi repudiandae vero quisquam numquam unde veniam deleniti asperiores itaque recusandae?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis similique quo eos eius vitae voluptatum adipisci dolorum, assumenda quidem, harum atque mollitia explicabo. Temporibus, voluptatem unde corrupti quae dolorum esse?
+    </p>
+
+    </center>
+</body>
+<script>
+  function printpage(){
+          //window.print();
+          var body =document.getElementById('body').innerHTML;
+          var data =document.getElementById('data').innerHTML;
+          document.getElementById('body').innerHTML=data;
+          window.print();
+          document.getElementById('body').innerHTML=body;
+  }
+</script>
+</html>
